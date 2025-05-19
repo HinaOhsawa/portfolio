@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "title": "Reference Stocker",
+    "description": "学習に使った参考記事や動画のリンクを保存・共有するためのサイトです。",
+    "image": "/images/ReferenceStocker.png",
+    "techs": ["React", "Next.js", "TypeScript"],
+    "githubUrl": "https://github.com/HinaOhsawa/reference-stocker/",
+    "siteUrl": "https://reference-stocker-production.up.railway.app/",
+
+    "Details": [
+      { "type": "heading", "text": "開発について" },
+      { "type": "paragraph", "text": "制作期間：約２ヶ月" },
+      {
+        "type": "paragraph",
+        "text": "はじめにYouTubeで簡易的な掲示板を作成する動画を見ながらアプリを作ってから、今回のアプリを開発しました。開発には主にChatGPTを使い、それぞれの技術の公式ドキュメントを照らし合わせながら作業しました。自分でも使いたいと思えるような完成度を目指して、作成しました。"
+      },
+      { "type": "heading", "text": "つまづいた箇所" },
+      { "type": "paragraph", "text": "＜TypeScriptの型合わせ＞" },
+      {
+        "type": "paragraph",
+        "text": "DBから取得したデータ構造が予想と違っていて、展開方法に苦戦しました。TypeScriptを使用しているので、しっかりと型指定しないとエラーがでるので、時間がかかりました。大体はtypes.tsに定義したinterfaceを使い回しました。"
+      },
+      {
+        "type": "paragraph",
+        "text": "＜サーバー・クライアントコンポーネントの使い分け＞"
+      },
+      {
+        "type": "paragraph",
+        "text": "はじめはサーバー・クライアントコンポーネントの使い方が曖昧で、サーバーコンポーネント上でAPIフェッチしていたりしていたので、余計なレスポンスがあったり、セッション情報が渡っていなくてエラーになったりしました。"
+      },
+      { "type": "paragraph", "text": "＜デプロイ＞" },
+      {
+        "type": "paragraph",
+        "text": "Nextjs15ではparamsがPromiseオブジェクトに変更され、ビルド時に修正が必要だと気づき、コードを修正しました。Vercelでデプロイする予定でしたが、やってみると、サーバーレス環境でのPrismaや無料枠のsupabaseの組み合わせでは、さまざまな課題があることがわかりました。解決策のPrisma Accelerateを試してみましたが他のエラーが増えたので、常時稼働型サーバーのRailwayを利用しました。DB接続でエラーになりましたが、接続プール経由（6543ポート）でSupabaseに接続することで解決しました。"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "プロジェクト 2",
+    "description": "より高度なUIとUXに挑戦したプロジェクトです。",
+    "image": "/placeholder.svg?height=300&width=500&text=プロジェクト2",
+    "techs": ["React", "Tailwind", "Framer Motion"],
+    "githubUrl": "#",
+    "siteUrl": "#"
+  }
+]
