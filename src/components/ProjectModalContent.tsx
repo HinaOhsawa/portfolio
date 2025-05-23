@@ -16,7 +16,7 @@ export default function ProjectModalContent({ project }: { project: Project }) {
   return (
     <div>
       <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-      <div className="relative w-full h-60 mb-4">
+      <div className="relative w-full h-80 mb-4 ">
         <Image
           src={project.image}
           alt={project.title}

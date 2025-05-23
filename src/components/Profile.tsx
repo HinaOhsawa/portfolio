@@ -3,7 +3,7 @@ import skills from "@/data/skills.json";
 import { Card, CardContent } from "./ui/card";
 export default function Profile() {
   return (
-    <section id="projects" className="py-16 scroll-mt-20">
+    <section id="profile" className="py-16 ">
       <h2 className="text-3xl font-bold mb-8 text-center">
         Profile
         <p className="text-sm font-normal">自己紹介</p>

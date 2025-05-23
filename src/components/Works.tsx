@@ -24,7 +24,7 @@ export default function Works() {
   ];
 
   return (
-    <section id="projects" className="py-16 scroll-mt-20">
+    <section id="works" className="py-16 ">
       <h2 className="text-3xl font-bold mb-8 text-center">
         Works
         <p className="text-sm font-normal">制作物</p>
@@ -33,7 +33,7 @@ export default function Works() {
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
           <Card key={project.id} className="overflow-hidden py-0 gap-0">
-            <div className="relative h-48 aspect-[4/3] w-full">
+            <div className="relative h-60 aspect-[4/3] w-full border-b">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -53,7 +53,7 @@ export default function Works() {
               >
                 詳細を見る
               </Button>
-              <div className="flex flex-wrap gap-2 m-4">
+              <div className="flex flex-wrap gap-2 my-6">
                 {project.techs.map((tech) => (
                   <Badge variant="secondary" key={tech}>
                     {tech}
