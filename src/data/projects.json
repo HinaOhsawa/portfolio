@@ -2,9 +2,20 @@
   {
     "id": 1,
     "title": "Reference Stocker",
-    "description": "学習に使った参考記事や動画のリンクを保存・共有するためのサイトです。",
-    "image": "/images/ReferenceStocker.png",
-    "techs": ["React", "Next.js", "TypeScript"],
+    "description": "Next.js + TypeScript + Supabase + Prisma を使用して作成しました。記事の投稿、編集、削除、ブックマークができる掲示板のようなアプリです。NextAuth.jsでログイン機能を実装しています。デプロイはRailwayを使用しています。",
+    "image": "/images/thumb_ReferenceStocker.png",
+    "techs": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Supabase",
+      "NextAuth.js",
+      "Railway",
+      "TailwindCSS",
+      "shad/ui",
+      "zod"
+    ],
     "githubUrl": "https://github.com/HinaOhsawa/reference-stocker/",
     "siteUrl": "https://reference-stocker-production.up.railway.app/",
 
@@ -32,17 +43,45 @@
       { "type": "paragraph", "text": "＜デプロイ＞" },
       {
         "type": "paragraph",
-        "text": "Nextjs15ではparamsがPromiseオブジェクトに変更され、ビルド時に修正が必要だと気づき、コードを修正しました。Vercelでデプロイする予定でしたが、やってみると、サーバーレス環境でのPrismaや無料枠のsupabaseの組み合わせでは、さまざまな課題があることがわかりました。解決策のPrisma Accelerateを試してみましたが他のエラーが増えたので、常時稼働型サーバーのRailwayを利用しました。DB接続でエラーになりましたが、接続プール経由（6543ポート）でSupabaseに接続することで解決しました。"
+        "text": "Nextjs15ではparamsがPromiseオブジェクトに変更され、ビルド時に修正が必要だと気づき、コードを修正しました。Vercelでデプロイする予定でしたが、やってみると、サーバーレス環境でのPrismaや無料枠のsupabaseの組み合わせでは、さまざまな課題があることがわかりました。解決策のPrisma Accelerateを試してみましたが他のエラーが増えたので、常時稼働型サーバーのRailwayを利用しました。DB接続でエラーになりましたが、接続プール経由（6543ポート）でsupabaseに接続することで解決しました。"
       }
     ]
   },
+
+  {
+    "id": 4,
+    "title": "ふぐ祭り",
+    "description": "Vite + React + React Three Fiber を使って作成したサイトです。ホバーやタップに反応して、3Dのふぐが動く様子を楽しめます。デプロイはNetlifyを使用しています。",
+    "image": "/images/thumb_fugu.png",
+    "techs": [
+      "React",
+      "Vite",
+      "React Three Fiber",
+      "TailwindCSS",
+      "Netlify",
+      "Three.js"
+    ],
+    "githubUrl": "https://github.com/HinaOhsawa/r3f_fugu",
+    "siteUrl": "https://r3f-fugu.netlify.app/"
+  },
+
+  {
+    "id": 3,
+    "title": "Portfolio",
+    "description": "Next.jsを使用して制作したポートフォリオサイトです。わかりやすさを意識して作りました。デプロイはVercelを使用しています。",
+    "image": "/images/thumb_fruit-paradise.png",
+    "techs": ["Next.js", "React", "TailwindCSS", "React Three Fiber", "Vercel"],
+    "githubUrl": "",
+    "siteUrl": ""
+  },
+
   {
     "id": 2,
-    "title": "プロジェクト 2",
-    "description": "より高度なUIとUXに挑戦したプロジェクトです。",
-    "image": "/placeholder.svg?height=300&width=500&text=プロジェクト2",
-    "techs": ["React", "Tailwind", "Framer Motion"],
-    "githubUrl": "#",
-    "siteUrl": "#"
+    "title": "フルーツパラダイス",
+    "description": "訓練校での制作物で、架空の遊園地サイトです。見て触って楽しめるサイトを作りたく、CSSアニメーションやjsにこだわりました。",
+    "image": "/images/thumb_fruit-paradise.png",
+    "techs": ["JavaScript", "jQuery", "scss", "CSSAnimation"],
+    "githubUrl": "",
+    "siteUrl": "https://fruit-paradise.netlify.app/"
   }
 ]
