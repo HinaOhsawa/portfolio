@@ -14,15 +14,6 @@ export default function Works() {
     (typeof projects)[number] | null
   >(null);
 
-  const images = [
-    "/images/slider_1.jpg",
-    "/images/slider_2.jpg",
-    "/images/slider_3.jpg",
-    "/images/slider_4.jpg",
-    "/images/slider_5.jpg",
-    "/images/slider_6.jpg",
-  ];
-
   return (
     <section id="works" className="py-16 ">
       <h2 className="text-3xl font-bold mb-8 text-center">
@@ -98,10 +89,10 @@ export default function Works() {
       </Modal>
 
       {/* ============ スライダー表示 ============ */}
-      <h3 className="mt-16 text-center font-bold">3Dモデリング</h3>
-      <ImageSlider images={images} />
+      <h3 className="text-xl mt-16 text-center font-bold">3D Works</h3>
+      <ImageSlider />
       <a
-        href=""
+        href="/3d-works"
         rel="noopener noreferrer"
         className="mt-4 flex justify-center items-center text-zinc-500 hover:text-zinc-800 underline"
       >

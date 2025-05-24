@@ -5,17 +5,22 @@ import "keen-slider/keen-slider.min.css";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 
-type Props = {
-  images: string[];
-};
+const images = [
+  "/images/blender_1.jpg",
+  "/images/blender_2.jpg",
+  "/images/blender_3.jpg",
+  "/images/blender_4.jpg",
+  "/images/blender_5.jpg",
+  "/images/blender_6.jpg",
+];
 
-export default function ImageSlider({ images }: Props) {
+export default function ImageSlider() {
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
   const [sliderInstanceRef, slider] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: {
-      perView: 4,
+      perView: 3.5,
       spacing: 16,
     },
     breakpoints: {
@@ -45,7 +50,7 @@ export default function ImageSlider({ images }: Props) {
         sliderRef.current = node;
         sliderInstanceRef(node);
       }}
-      className="keen-slider mt-6"
+      className="keen-slider mt-6 px-[10%]"
     >
       {images.map((src, index) => (
         <div
