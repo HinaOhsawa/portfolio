@@ -1,37 +1,38 @@
 [
   {
     "id": 1,
-    "skill": "基本情報技術者試験",
-    "description": "2025年3月に受験して、合格しました。"
+    "skill": "PHP/MySQL",
+    "description": "有料情報サイトの開発を担当していました。DBやxml, json, csvからデータを取得して整形することができます。WordPressサイトのカスタマイズも制作経験があります。",
+    "image": "/images/.png"
   },
   {
     "id": 2,
     "skill": "Photoshop/Illustrator",
-    "description": "グッズ制作会社に入稿するデザインデータの作成で画像のパス化などができます。副業にて、ロゴデザインや名刺作成をしました。",
+    "description": "グッズ制作会社に入稿するデザインデータを作成していました。画像のパス化などができ、ロゴデザインや名刺作成をしたことがあります。",
     "image": "/images/.png"
   },
   {
     "id": 3,
     "skill": "Blender",
-    "description": "オリジナルキャラクターの制作、VRM化、モデリング、リギング",
+    "description": "キャラクターのモデリング、VRM化、アニメーションを扱うことができます。3Dモデルをwebサイトで表示することも可能です。",
     "image": "/images/.png"
   },
   {
     "id": 4,
-    "skill": "PHP/MySQL",
-    "description": "オリジナルキャラクターの制作、VRM化、モデリング、リギング",
+    "skill": "モーションキャプチャー",
+    "description": "OptiTrackやViVeといったモーションキャプチャーシステムを使用して、リアルタイムでキャラクターにアニメーションを適用することができます。",
     "image": "/images/.png"
   },
   {
     "id": 5,
     "skill": "コーディング（HTML/SCC/JS）",
-    "description": "オリジナルキャラクターの制作、VRM化、モデリング、リギング",
+    "description": "LPやHTMLメール（メルマガ）のコーディング、レスポンシブなウェブサイトを構築することが可能です。",
     "image": "/images/.png"
   },
   {
     "id": 6,
     "skill": "Arduino",
-    "description": "オリジナルキャラクターの制作、VRM化、モデリング、リギング",
+    "description": "Arduino 言語(C++言語を基にした言語)を使用してArduino(マイコンボード)とRFIDリーダーで非接触ICカードを読み取り、データをサーバーに飛ばして処理するシステムを構築しました。",
     "image": "/images/.png"
   }
 ]
