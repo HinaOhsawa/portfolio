@@ -15,7 +15,7 @@ export default function Works() {
   >(null);
 
   return (
-    <section id="works" className="py-16 ">
+    <section id="works" className="py-12 ">
       <h2 className="text-3xl font-bold mb-8 text-center">
         Works
         <p className="text-sm font-normal">制作物</p>
