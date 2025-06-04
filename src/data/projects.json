@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Reference Stocker",
-    "description": "Next.js + TypeScript + Supabase + Prisma を使用して作成しました。記事の投稿、編集、削除、ブックマークができる掲示板のようなアプリです。NextAuth.jsでログイン機能を実装しています。デプロイはRailwayを使用しています。",
+    "description": "Next.js + TypeScript + Supabase + Prisma を使用して作成しました。記事の投稿、編集、削除、ブックマークができる掲示板のようなアプリです。NextAuth.jsでログイン機能を実装しています。デプロイはRenderを使用しています。",
     "image": "/images/thumb_ReferenceStocker.png",
     "techs": [
       "React",
@@ -11,13 +11,14 @@
       "Prisma",
       "Supabase",
       "NextAuth.js",
-      "Railway",
       "TailwindCSS",
       "shad/ui",
-      "zod"
+      "zod",
+      "YouTube Data API v3",
+      "Render"
     ],
     "githubUrl": "https://github.com/HinaOhsawa/reference-stocker/",
-    "siteUrl": "https://reference-stocker-production.up.railway.app/",
+    "siteUrl": "https://reference-stocker.onrender.com",
 
     "Details": [
       { "type": "heading", "text": "開発について" },
@@ -30,7 +31,7 @@
       { "type": "paragraph", "text": "＜TypeScriptの型合わせ＞" },
       {
         "type": "paragraph",
-        "text": "DBから取得したデータ構造が予想と違っていて、展開方法に苦戦しました。TypeScriptを使用しているので、しっかりと型指定しないとエラーがでるので、時間がかかりました。大体はtypes.tsに定義したinterfaceを使い回しました。"
+        "text": "DBから取得したデータ構造が予想と違っていて、展開方法に苦戦しました。TypeScriptを使用しているので、しっかりと型指定しないとエラーがでるので、時間がかかりました。"
       },
       {
         "type": "paragraph",
@@ -38,12 +39,12 @@
       },
       {
         "type": "paragraph",
-        "text": "はじめはサーバー・クライアントコンポーネントの使い方が曖昧で、サーバーコンポーネント上でAPIフェッチしていたりしていたので、余計なレスポンスがあったり、セッション情報が渡っていなくてエラーになったりしました。"
+        "text": "はじめはサーバー・クライアントコンポーネントの使い方が曖昧で、サーバーコンポーネント上でAPIフェッチしていたりしていたので、余計なレスポンスがあったり、セッション情報が渡っていなくてエラーが出ることがありました。後から使い分けを理解して、修正しました。"
       },
       { "type": "paragraph", "text": "＜デプロイ＞" },
       {
         "type": "paragraph",
-        "text": "Nextjs15ではparamsがPromiseオブジェクトに変更され、ビルド時に修正が必要だと気づき、コードを修正しました。Vercelでデプロイする予定でしたが、やってみると、サーバーレス環境でのPrismaや無料枠のsupabaseの組み合わせでは、さまざまな課題があることがわかりました。解決策のPrisma Accelerateを試してみましたが他のエラーが増えたので、常時稼働型サーバーのRailwayを利用しました。DB接続でエラーになりましたが、接続プール経由（6543ポート）でsupabaseに接続することで解決しました。"
+        "text": "Nextjs15ではparamsがPromiseオブジェクトに変更され、ビルド時に修正が必要だと気づき、コードを修正しました。Vercelでデプロイする予定でしたが、やってみると、サーバーレス環境でのPrismaや無料枠のsupabaseの組み合わせでは、さまざまな課題があることがわかりました。解決策のPrisma Accelerateを試してみましたが他のエラーが増えたので、常時稼働型サーバーのRailwayやRenderを利用すると、デプロイに成功しました。ローカルで動いても、デプロイ環境で動かないことが多く、使用技術とデプロイ環境の相性を知ることが大切だと思いました。"
       }
     ]
   },
@@ -53,26 +54,44 @@
     "title": "ふぐ祭り",
     "description": "Vite + React + React Three Fiber を使って作成したサイトです。ホバーやタップに反応して、3Dのふぐが動く様子を楽しめます。デプロイはNetlifyを使用しています。",
     "image": "/images/thumb_fugu.png",
-    "techs": [
-      "React",
-      "Vite",
-      "React Three Fiber",
-      "TailwindCSS",
-      "Netlify",
-      "Three.js"
-    ],
+    "techs": ["React", "Vite", "React Three Fiber", "TailwindCSS", "Netlify"],
     "githubUrl": "https://github.com/HinaOhsawa/r3f_fugu",
-    "siteUrl": "https://r3f-fugu.netlify.app/"
+    "siteUrl": "https://r3f-fugu.netlify.app/",
+    "Details": [
+      { "type": "heading", "text": "開発について" },
+      { "type": "paragraph", "text": "制作期間：約3日" },
+      {
+        "type": "paragraph",
+        "text": "参考サイト：https://codesandbox.io/p/sandbox/zxpv7?file=%2Fsrc%2Fstyles.css"
+      },
+      {
+        "type": "paragraph",
+        "text": "3Dの演出は、参考サイトのコードをもとに作成しました。"
+      }
+    ]
   },
 
   {
     "id": 3,
     "title": "Portfolio",
-    "description": "Next.jsを使用して制作したポートフォリオサイトです。わかりやすさを意識して作りました。デプロイはVercelを使用しています。",
-    "image": "/images/thumb_fruit-paradise.png",
-    "techs": ["Next.js", "React", "TailwindCSS", "React Three Fiber", "Vercel"],
-    "githubUrl": "",
-    "siteUrl": ""
+    "description": "Next.jsを使用して制作したポートフォリオサイトです。わかりやすさを意識して作りました。3DモデルはBlenderで制作しました。デプロイはVercelを使用しています。",
+    "image": "/images/thumb_portfolio.png",
+    "techs": [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "React Three Fiber",
+      "TypeScript",
+      "shad/ui",
+      "Vercel",
+      "Blender"
+    ],
+    "githubUrl": "https://github.com/HinaOhsawa/portfolio",
+    "siteUrl": "https://portfolio-hina-ohsawas-projects.vercel.app/",
+    "Details": [
+      { "type": "heading", "text": "開発について" },
+      { "type": "paragraph", "text": "制作期間：約3週間" }
+    ]
   },
 
   {
@@ -80,8 +99,8 @@
     "title": "フルーツパラダイス",
     "description": "訓練校での制作物で、架空の遊園地サイトです。見て触って楽しめるサイトを作りたく、CSSアニメーションやjsにこだわりました。",
     "image": "/images/thumb_fruit-paradise.png",
-    "techs": ["JavaScript", "jQuery", "scss", "CSSAnimation"],
-    "githubUrl": "",
+    "techs": ["JavaScript", "jQuery", "scss", "CSSAnimation", "Illustrator"],
+    "githubUrl": "https://github.com/HinaOhsawa/fruit-paradise",
     "siteUrl": "https://fruit-paradise.netlify.app/"
   }
 ]

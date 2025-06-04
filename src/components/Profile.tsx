@@ -22,10 +22,10 @@ export default function Profile() {
           2021年 6ヶ月間職業訓練校にてWeb制作、デザインを学ぶ
         </p>
         <p className="text-muted-foreground mt-4">
-          2021年~2024年 Webエンジニアとして3年間勤務
+          2021年~2024年 Web制作会社にて3年間勤務
         </p>
         <p className="text-muted-foreground mt-4">
-          2025年3月 基本情報技術者試験
+          2025年3月 基本情報技術者試験を取得
         </p>
         <hr className="mt-4" />
         <p className="mt-4 text-muted-foreground">
