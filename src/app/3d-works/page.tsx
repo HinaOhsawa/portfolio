@@ -50,9 +50,8 @@ export default function HomePage() {
           ))}
         </div>
 
-        {/* 動画スライダー */}
-        {/* モーションキャプチャの説明 */}
-        <div className="mt-20 ">
+        {/* アニメーション */}
+        <div className="mt-12 border bg-gray-100 p-6 rounded-lg">
           <h3 className="text-2xl xl:text-3xl font-bold ">Animation</h3>
 
           <p className="mt-2 w-full  mx-auto">
@@ -65,8 +64,10 @@ export default function HomePage() {
             マーカーのついたスーツを着て、専用カメラでを撮影します。
             その後、キャプチャーしたデータをBlenderに取り込み、キャラクターのボーンに割り当てることでアニメーションを作成することができます。
           </p>
-          <VideoSlider />
         </div>
+
+        {/* 動画スライダー */}
+        <VideoSlider />
 
         {/* ボクセル作品 */}
         <div className="mt-20 grid gap-4 grid-cols-2 sm:grid-cols-3">

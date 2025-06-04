@@ -17,26 +17,32 @@ export default function Profile() {
           </Avatar>
           <p className="text-sm mt-2 text-center">オオサワ ヒナ</p>
         </div>
-        <hr className="mt-4" />
-        <p className="text-muted-foreground mt-4">
-          2021年 6ヶ月間職業訓練校にてWeb制作、デザインを学ぶ
-        </p>
-        <p className="text-muted-foreground mt-4">
-          2021年~2024年 Web制作会社にて3年間勤務
-        </p>
-        <p className="text-muted-foreground mt-4">
-          2025年3月 基本情報技術者試験を取得
-        </p>
-        <hr className="mt-4" />
+
         <p className="mt-4 text-muted-foreground">
           前職ではPHPとMySQLを使ったバックエンド業務や、LPのサイトコーディングをしていました。
           Reactなどのモダンなフロントエンド開発をしたく、転職を決断しました。
           3Dやアニメーションにも興味があります。
         </p>
+
+        <hr className="mt-4" />
+        <div className="sm:flex text-muted-foreground mt-4">
+          <p className="w-1/4 whitespace-nowrap">2021年6ヶ月間</p>
+          <p className="">職業訓練校にてWeb制作、デザインを学ぶ</p>
+        </div>
+
+        <div className="sm:flex text-muted-foreground mt-4">
+          <p className="w-1/4 whitespace-nowrap">2021年~2024年</p>
+          <p className="">Web制作会社にて3年間勤務</p>
+        </div>
+
+        <div className="sm:flex text-muted-foreground mt-4">
+          <p className="w-1/4 whitespace-nowrap">2025年3月</p>
+          <p className="">基本情報技術者試験を取得</p>
+        </div>
       </Card>
 
       <h3 className="text-xl mt-12 font-bold text-center">経験とスキル</h3>
-      <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <div className="mt-6 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-3">
         {skills.map((skill) => (
           <Card
             key={skill.id}
