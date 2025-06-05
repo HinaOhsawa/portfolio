@@ -12,7 +12,7 @@
       "Supabase",
       "NextAuth.js",
       "TailwindCSS",
-      "shad/ui",
+      "shadcn/ui",
       "zod",
       "YouTube Data API v3",
       "Render"
@@ -82,7 +82,7 @@
       "TailwindCSS",
       "React Three Fiber",
       "TypeScript",
-      "shad/ui",
+      "shadcn/ui",
       "Vercel",
       "Blender"
     ],
