@@ -35,7 +35,7 @@ export default function HomePage() {
         </h2>
 
         {/* Blender作品 */}
-        <div className="grid gap-4 grid-cols-2 sm:grid-cols-3">
+        <div className="grid gap-2 sm:gap-4 grid-cols-2 sm:grid-cols-3">
           <div className="p-4 border flex-col relative aspect-square bg-gray-100 rounded flex items-center justify-center">
             <h3 className="font-bold text-xl xl:text-2xl">Blender</h3>
             <p className="text-sm mt-2 text-gray-500">
@@ -70,7 +70,7 @@ export default function HomePage() {
         <VideoSlider />
 
         {/* ボクセル作品 */}
-        <div className="mt-20 grid gap-4 grid-cols-2 sm:grid-cols-3">
+        <div className="mt-20 grid gap-2 sm:gap-4 grid-cols-2 sm:grid-cols-3">
           <div className="p-4 border flex-col relative aspect-square bg-gray-100 rounded flex items-center justify-center">
             <h3 className="font-bold text-xl xl:text-2xl">MagicaVoxel</h3>
             <p className="text-sm mt-2 text-gray-500">

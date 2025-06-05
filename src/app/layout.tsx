@@ -23,6 +23,32 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
+  openGraph: {
+    title: "Portfolio",
+    description: "Portfolio",
+    url: "https://portfolio-hina-ohsawas-projects.vercel.app",
+    siteName: "Portfolio",
+    images: [
+      {
+        url: "https://portfolio-hina-ohsawas-projects.vercel.app/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ogp image",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio",
+    description: "Portfolio",
+    images: [
+      "https://portfolio-hina-ohsawas-projects.vercel.app/images/og-image.jpg",
+    ],
+  },
+  icons: {
+    icon: "/portfolio-favicon.ico",
+  },
 };
 
 export default function RootLayout({
