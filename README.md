@@ -1,6 +1,7 @@
 # Portfolo
 
 Next.js を使用して作成したポートフォリオサイトです。
+![サイトトップ](./public/images/og-image.jpg)
 
 ## 🚀 デモ
 
