@@ -22,7 +22,7 @@
   {
     "id": 1,
     "title": "Reference Stocker",
-    "description": "Next.js + TypeScript + Supabase + Prisma を使用して作成しました。記事の投稿、編集、削除、ブックマークができる掲示板のようなアプリです。NextAuth.jsでログイン機能を実装しています。デプロイはRenderを使用しています。",
+    "description": "Next.js + TypeScript + Supabase + Prisma を使用して作成しました。記事の投稿、編集、削除、ブックマークができる掲示板のようなアプリです。NextAuth.jsでログイン機能を実装しています。デプロイはRailwayを使用しています。",
     "image": "/images/thumb_ReferenceStocker.jpg",
     "techs": [
       "React",
@@ -35,10 +35,10 @@
       "shadcn/ui",
       "zod",
       "YouTube Data API v3",
-      "Render"
+      "Railway"
     ],
     "githubUrl": "https://github.com/HinaOhsawa/reference-stocker/",
-    "siteUrl": "https://reference-stocker.onrender.com",
+    "siteUrl": "https://reference-stocker-production.up.railway.app/",
 
     "Details": [
       { "type": "heading", "text": "開発について" },
