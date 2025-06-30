@@ -1,5 +1,25 @@
 [
   {
+    "id": 5,
+    "title": "Anthem Club",
+    "description": "世界の国歌を聴いて、どこの国かを当てるクイズゲームです。Vite+React+TypeScriptを使用して作成しました。デプロイはVercelを使用しています。",
+    "image": "/images/thumb_anthem-club.png",
+    "techs": [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "react-world-flags",
+      "Vite",
+      "Vercel"
+    ],
+    "githubUrl": "https://github.com/HinaOhsawa/anthem-club/",
+    "siteUrl": "https://anthem-club.vercel.app",
+    "Details": [
+      { "type": "heading", "text": "開発について" },
+      { "type": "paragraph", "text": "制作期間：約1週間" }
+    ]
+  },
+  {
     "id": 1,
     "title": "Reference Stocker",
     "description": "Next.js + TypeScript + Supabase + Prisma を使用して作成しました。記事の投稿、編集、削除、ブックマークができる掲示板のようなアプリです。NextAuth.jsでログイン機能を実装しています。デプロイはRenderを使用しています。",
