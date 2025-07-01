@@ -1,7 +1,7 @@
 [
   {
     "id": 5,
-    "title": "Anthem Club",
+    "title": "Anthem Club - 国歌当てクイズ",
     "description": "世界の国歌を聴いて、どこの国かを当てるクイズゲームです。Vite+React+TypeScriptを使用して作成しました。デプロイはVercelを使用しています。",
     "image": "/images/thumb_anthem-club.png",
     "techs": [
@@ -16,7 +16,12 @@
     "siteUrl": "https://anthem-club.vercel.app",
     "Details": [
       { "type": "heading", "text": "開発について" },
-      { "type": "paragraph", "text": "制作期間：約1週間" }
+      { "type": "paragraph", "text": "制作期間：約1週間" },
+      { "type": "heading", "text": "こだわった点" },
+      {
+        "type": "paragraph",
+        "text": "国旗やイラストを使って視覚的にわかりやすく、楽しい見た目にこだわりました。結果ページはスコアに応じて画像とコメントを変えて、もう一度遊びたくなるように工夫しました。また、出題された国歌を聴き直せるようにして、復習できるようにしました。今後、リージョンごとに分けて問題を出題したり、主要な国のみから出題したりできるように開発する予定です。"
+      }
     ]
   },
   {
