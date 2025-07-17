@@ -20,18 +20,18 @@ export default function Profile() {
 
         <p className="mt-4 text-muted-foreground">
           前職ではPHPとMySQLを使ったバックエンド業務や、LPのサイトコーディングをしていました。
-          Reactなどのモダンなフロントエンド開発をしたく、転職を決断しました。
+          ReactやTypeScriptなどのモダンなフロントエンド開発をしたく、転職を決断しました。
           3Dやアニメーションにも興味があります。
         </p>
 
         <hr className="mt-4" />
         <div className="sm:flex text-muted-foreground mt-4">
-          <p className="w-1/4 whitespace-nowrap">2021年6ヶ月間</p>
+          <p className="w-1/4 whitespace-nowrap">2021年 6ヶ月間</p>
           <p className="">職業訓練校にてWeb制作、デザインを学ぶ</p>
         </div>
 
         <div className="sm:flex text-muted-foreground mt-4">
-          <p className="w-1/4 whitespace-nowrap">2021年~2024年</p>
+          <p className="w-1/4 whitespace-nowrap">2022年~2024年</p>
           <p className="">Web制作会社にて3年間勤務</p>
         </div>
 
